@@ -55,7 +55,7 @@ loginpage.addEventListener("click", (e) => {
       myform.password.value = '';
 
       // قم بتوجيه المستخدم إلى صفحة إضافة الغرفة هنا
-      window.open("Pages/AddNewRooms.html");
+      window.location.href = "Pages/AddNewRooms.html";
     })
     .catch((error) => {
       // حدث خطأ أثناء تسجيل الدخول
