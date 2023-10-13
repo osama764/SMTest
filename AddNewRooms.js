@@ -45,11 +45,10 @@ close.addEventListener("click", (e) => {
 // initialization variables to use later
 let nameRoom     = document.getElementById("nameRoom");
 let imageRoom    = document.getElementById("imageRoom");
-let select       = document.querySelector(".select");
 let addNewRoom   = document.querySelector(".addNewRoom");
 let contentRooms = document.querySelector(".contentRooms");
 let body         = document.querySelector("body");
-console.log(select)
+
 // this button will add New Room in container Rooms after take data of this Room
 addNewRoom.addEventListener("click", (e) => {
   e.preventDefault(); // To prevent the page from loading 
@@ -214,7 +213,7 @@ let containerSelectionImages = document.querySelector(
 );
 
 // for loop ( 12 image ) : 12 is not fixed, it changes according to the number of images
-for (let i = 1; i <= 12; i++) {
+for (let i = 1; i <= 6; i++) {
   let newImage = `
 <div class="cardImage">
 <img src="../images/${i}.jpg" alt="">
